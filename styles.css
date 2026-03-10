@@ -158,11 +158,12 @@ body {
   right:0;
   bottom:0;
   display:none;
-  width:100%;
+  width:625px;
   height:100%;
   transition-duration:0.2s;
   background-color:#ccccff;
   z-index:1;
+  transform:translate(3);
 }
 
 #overlay2 {
