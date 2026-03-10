@@ -9,3 +9,16 @@ function removeoverlay(name) {
   document.getElementById(name).style.display="none"
   }, 900);
 }
+
+const wrappers = document.getElementsByClassName('wrapper');
+
+function scalePage() {
+  const scale = window.innerWidth / 625; 
+  for (let i = 0; i < wrappers.length; i++) {
+    wrappers[i].style.transform = `scale(${scale})`;
+    wrappers[i].style.transformOrigin = 'top left';
+  }
+}
+
+window.addEventListener('resize', scalePage);
+scalePage();
