@@ -2,13 +2,12 @@
 
 <head>
   <meta charset = 'UTF-8'>
-  <meta name="viewport" content="width=625">
-  <title> the cutest website ever! </title>
+  <title> Yo </title>
   <link rel = 'stylesheet' href = 'styles.css'>
 </head>
 
 <body>
-  <div style= 'width:625px;position:relative;transform: scale( calc(100vw / 625))'>
+  <div class = 'wrapper'>
   <div class = 'header'>
     <h1>my website :D</h1>
   </div>
@@ -17,21 +16,18 @@
   <img class = "myimage" id = "glaceonimage" src = "IMG_1241.jpeg">
   
   <div class = "overlay" id="overlay1">
-    <div style= 'width:625px;position:relative;transform: scale( calc(100vw / 625))'>
     <div class = "header" id ="aboutmeheader"> <h1>ABOUT ME</h1></div>
     <button id ="backtomain1" type="button" class = "mybutton1" onclick ="removeoverlay('overlay1')"><b>back to main</b></button>
     <div class ="textbox">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     <img class = "myimage" src ="IMG_1242.jpeg">
-    </div>
   </div>
   
   <button type ="button" class = "mybutton1" id = "gamebutton" onclick = "displayoverlay('overlay2')" ><b> recommendations</b></button>
   
   
   <div class = "overlay" id = "overlay2">
-    <div style= 'width:625px;position:relative;transform: scale( calc(100vw / 625))'>
     <div class = "header" id = "gameheader"><h1>RECOMMENDATIONS</h1></div>
     <button type = "button" class = "mybutton1" id ="backtomain2" onclick = "removeoverlay('overlay2')"><b>back to main</b></button>
     <img class = "myimage" src="IMG_1243.jpeg" id="leafeonimage">
@@ -40,13 +36,11 @@
         play the binding of isaac or whatever idk ill add actual text later
       </p>
     </div>
-    </div>
   </div>
   
   <button type = "button" class = "mybutton1" id = "mystuffbutton" onclick = "displayoverlay('overlay3')"><b>stuff i made</b></button>
   
   <div class = "overlay" id = "overlay3">
-    <div style= 'width:625px;position:relative;transform: scale( calc(100vw / 625))'>
     <div class = "header" id = "mystuffheader"><h1>MY STUFF</h1></div>
     <button type="button" class="mybutton1" id = "backtomain3" onclick = "removeoverlay('overlay3')"><b>back to main</b></button>
     <img class = "myimage" src="IMG_1245.jpeg" id = "sylveonimage">
@@ -54,7 +48,6 @@
       <p>
         i have madw a lot of stuff i promise ill put it here someday
       </p>
-    </div>
     </div>
   </div>
   </div>
