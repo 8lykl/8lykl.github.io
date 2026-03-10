@@ -3,6 +3,8 @@ body {
   background-color: #e6f3ff;
   color: #47A0FF;
   z-index:-1;
+  width: 1000px
+  height:750px
 }
 
 .header {
