@@ -5,6 +5,12 @@ body {
   z-index:-1;
 }
 
+.wrapper {
+  width:625px;
+  position:relative;
+  transform-origin: top-left
+}
+
 .header {
   background-color: rgb(240, 247, 255);
   border-radius: 10px;
@@ -148,7 +154,7 @@ body {
 #mystuffbutton {
   width:150px;
   position: absolute;
-  right: 80px;
+  right:80px;
   top: 157px;
 }
 
@@ -157,13 +163,14 @@ body {
   left:0;
   right:0;
   bottom:0;
+  margin-left: -8px;
   display:none;
-  width:625px;
-  height:100%;
+  width:100%;
+  min-height: 100vh;
   transition-duration:0.2s;
   background-color:#ccccff;
   z-index:1;
-  transform:translate(3);
+  transform:translateY(360px)
 }
 
 #overlay2 {
@@ -175,11 +182,11 @@ body {
 }
 
 @keyframes fadein{
-  0%{bottom: 1000}
-  100%{bottom:0}
+  0%{transform:translateY(-1000px)}
+  100%{transform:translateY(360px);}
 }
 
 @keyframes fadeout{
-  0%{bottom:0;}
-  100%{bottom:1000;}
+  0%{transform:translateY(360px);}
+  100%{transform:translateY(-1000px)}
 }
